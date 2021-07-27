@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "fb3b10ac-b3c7-421d-afbc-795dcc55f1c0",
+		"name": "test",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:2000/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"5\",\r\n    \"username\" : \"alief\",\r\n    \"email\" : \"abc@cba.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2000/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 6,\r\n        \"display_name\": \"ariel\",\r\n        \"first_name\": \"ariel\",\r\n        \"last_name\": \"husein\",\r\n        \"birth_day\": \"2002-03-15T17:00:00.000Z\",\r\n        \"gender\": \"male\",\r\n        \"email_address\": \"abc@cba.com\",\r\n        \"delivery_address\": \"makamhaji, surakarta\",\r\n        \"number_phone\": 2147483647\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/user/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 6,\r\n        \"display_name\": \"ariel\",\r\n        \"first_name\": \"ariel\",\r\n        \"last_name\": \"husein\",\r\n        \"birth_day\": \"2002-03-15T17:00:00.000Z\",\r\n        \"gender\": \"male\",\r\n        \"email_address\": \"abc@cba.com\",\r\n        \"delivery_address\": \"makamhaji, surakarta\",\r\n        \"number_phone\": 2147483647\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/user/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/user/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/user/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/product/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/product/",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/product?page=2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"product\": \"vaggie tomatp\",\r\n        \"price\": 50000,\r\n        \"description\": \"vaggie tomatp\",\r\n        \"category\": \"foods\",\r\n        \"stock\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/product?page=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/product/8",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"product\": \"vaggie tomatp\",\r\n        \"price\": 50000,\r\n        \"description\": \"vaggie tomatp\",\r\n        \"category\": \"foods\",\r\n        \"stock\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/product/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"product",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/product/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8800/product/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"product",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
