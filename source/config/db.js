@@ -3,7 +3,7 @@ require('dotenv').config()
 const connection = mysql.createConnection({
     host: 'localhost',
     user: process.env.db_username,
-    database: 'test'
+    database: 'coffee_shop'
   });
 
   connection.connect((err)=>{
